@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>New test Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Random Number Generator</h1>
+
+        <h2>By Atreyu Blum</h2>
+    </header>
+
+    <img src="images/download (3).jpg" alt="why are you seeing this">
+
+    <form name="rn" id="randomNumber">
+        <input type="text" id="tb" name="tb" />
+        <input type="button" value="Random Number!" onclick="Random();" />
+    </form>
+    
+    <script type="text/javascript">
+       
+        function Random() {
+        var rnd = Math.floor(Math.random() * 1000000000);
+        document.getElementById('tb').value = rnd;
+        }
+
+    </script>
+</body>
+</html>
